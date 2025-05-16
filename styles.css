@@ -1,0 +1,190 @@
+body{
+    background-color: #1abc9c;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* responsive on small screens */
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    line-height: 2;
+    color: #444;
+}
+
+.text-content button {
+    margin:0 auto;
+    padding: 12px 20px;
+    background-color: #1abc9c;
+    color: rgb(211, 232, 231);
+    border: none;
+    box-shadow: 5px 5px 5px 5px rgba(32, 30, 30, 0.2);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.text-content button:hover {
+    background-color: #16a085;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1{color: rgb(241, 249, 249);
+    font-family: sans-serif;
+}
+p{color:rgb(250, 244, 247);
+    font-family: sans-serif;
+}
+ul{
+    list-style-image: url('images/pointer-icon.png');
+}
+ol{
+    list-style-type:circle;
+}
+a{
+font-family : Helvetica, sans-serif;
+text-decoration : none;
+background-color: rgb(214, 229, 231);
+padding : 5px;
+}
+a:hover{
+background-color: rgb(150, 234, 234);
+color : #ffffff;
+}
+
+/* Menu bar layout: logo on left, links on right */
+#menu-bar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo image styling */
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Group nav links in a flex row */
+.nav-links {
+    display: flex;
+    margin-left:0 auto;
+}
+
+/* Style each navigation link */
+.nav-links a {
+    color: rgb(1, 7, 51);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+.cont_img {
+    position: relative;        /* allows absolutely positioned child */
+    width: 100%;
+    height: 50vh;              /* half the screen height */
+    overflow: hidden;
+}
+
+.cont_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* ensures image fills container */
+    display: block;
+}
+
+/* Heading on top of image */
+.image-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    color: white;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* makes text stand out */
+    margin: 0;
+}
+
+/* Layout container for About Us section */
+.about_img {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Make the image round */
+.about_img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+
+/* Style the unordered and ordered lists */
+.about_img ul,
+.about_img ol {
+    text-align: left;
+    max-width: 700px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.about_img li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Optional: Style h3 headings inside .about_img */
+.about_img h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #1e6f5c;
+}
+.about_us{
+    color: #1e6f5c;
+}
